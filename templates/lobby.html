@@ -1,9 +1,16 @@
 
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+<main>
+    <section id = "form-container">
+        <img id = "logo" src="{% static 'images/chat-icon.png' %}"/>
 
 
-<h1>lobby with template inheritance</h1>
-
-
+        <div>
+            <h1>Welcome to MyChat</h1>
+            <p>A group video calling application just for you</p>
+        </div>
+    </section>
+</main>
 {% endblock content%}
